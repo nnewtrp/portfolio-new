@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       {/* Main */}
-      <Box sx={containerStyle}>
+      <Box sx={[containerStyle, { justifyContent: "center", alignItems: "center" }]}>
         <Box sx={imageContainerStyle}>
           <img
             src="/home/me1.jpg"
@@ -17,7 +17,7 @@ export default function Home() {
             className={styles.mainImage}
           />
         </Box>
-        <div className={styles.mainContainer} style={{ textAlign: 'center' }}>
+        <div className={styles.mainContainer} style={{ textAlign: "center" }}>
           <h1 style={{ fontSize: 64 }}>Teerapat Satitporn</h1>
           <p className={styles.description}>Software Developer</p>
         </div>
@@ -36,9 +36,8 @@ export default function Home() {
           <h1 className={styles.title}>About Me</h1>
           <p className={styles.description}>
             I am a software developer based in <b>Bangkok, Thailand</b>.
-            I graduated with a degree in <b>Information Technology</b>
-            and have over <b>3 years</b> of experience
-            in web and application development.
+            I graduated with a degree in <b>Information Technology</b> and
+            have over <b>3 years of experience</b> in web and application development.
           </p>
         </div>
       </Box>
@@ -55,7 +54,7 @@ export default function Home() {
         <div className={styles.mainContainer}>
           <h1 className={styles.title}>Education</h1>
           <p className={styles.description}>
-            Some description here
+            Degree in <b>Information Technology</b> — see my full academic journey from school to university.
           </p>
         </div>
       </Box>
@@ -72,7 +71,8 @@ export default function Home() {
         <div className={styles.mainContainer} style={{ color: 'white' }}>
           <h1 className={styles.title}>Work Experience</h1>
           <p className={styles.description}>
-            Some description here
+            Over <b>3 years of experience</b> in software development — learn more about
+            my professional roles and the companies I’ve worked with.
           </p>
         </div>
       </Box>
