@@ -1,9 +1,13 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import styles from "./page.module.css";
 
-var containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
-var reverseStyle = { flexDirection: 'row-reverse', backgroundColor: 'black' }
-var imageContainerStyle = { display: { xs: 'none', md: 'block' }, overflow: 'hidden' }
+const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
+const reverseStyle = { flexDirection: 'row-reverse', backgroundColor: 'black' }
+const imageContainerStyle = { display: { xs: 'none', md: 'block' }, overflow: 'hidden' }
+
+const buttonStyle = { fontWeight: 'bold', marginTop: 5 }
+const buttonBlackStyle = { ...buttonStyle, color: 'black', border: '2px solid black' }
+const buttonWhiteStyle = { ...buttonStyle, color: 'white', border: '2px solid white' }
 
 export default function Home() {
   return (
@@ -56,6 +60,9 @@ export default function Home() {
           <p className={styles.description}>
             Degree in <b>Information Technology</b> — see my full academic journey from school to university.
           </p>
+          <Button variant="outlined" sx={buttonBlackStyle}>
+            See More {'>>>'}
+          </Button>
         </div>
       </Box>
 
@@ -74,6 +81,9 @@ export default function Home() {
             Over <b>3 years of experience</b> in software development — learn more about
             my professional roles and the companies I’ve worked with.
           </p>
+          <Button variant="outlined" sx={buttonWhiteStyle}>
+            See More {'>>>'}
+          </Button>
         </div>
       </Box>
 
