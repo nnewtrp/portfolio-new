@@ -19,7 +19,7 @@ export default function Home() {
         </Box>
         <div className={styles.mainContainer} style={{ textAlign: 'center' }}>
           <h1 style={{ fontSize: 64 }}>Teerapat Satitporn</h1>
-          <p style={{ fontSize: 30, marginTop: 10 }}>Software Developer</p>
+          <p className={styles.description}>Software Developer</p>
         </div>
       </Box>
 
@@ -34,6 +34,12 @@ export default function Home() {
         </Box>
         <div className={styles.mainContainer} style={{ color: 'white' }}>
           <h1 className={styles.title}>About Me</h1>
+          <p className={styles.description}>
+            I am a software developer based in <b>Bangkok, Thailand</b>.
+            I graduated with a degree in <b>Information Technology</b>
+            and have over <b>3 years</b> of experience
+            in web and application development.
+          </p>
         </div>
       </Box>
 
@@ -48,6 +54,9 @@ export default function Home() {
         </Box>
         <div className={styles.mainContainer}>
           <h1 className={styles.title}>Education</h1>
+          <p className={styles.description}>
+            Some description here
+          </p>
         </div>
       </Box>
 
@@ -62,6 +71,9 @@ export default function Home() {
         </Box>
         <div className={styles.mainContainer} style={{ color: 'white' }}>
           <h1 className={styles.title}>Work Experience</h1>
+          <p className={styles.description}>
+            Some description here
+          </p>
         </div>
       </Box>
 

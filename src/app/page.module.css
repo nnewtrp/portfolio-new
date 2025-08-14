@@ -11,3 +11,8 @@
   font-size: 64px;
   text-decoration: underline;
 }
+
+.description {
+  font-size: 30;
+  margin: 10 0;
+}
