@@ -1,13 +1,23 @@
-import { Box, Button } from "@mui/material";
-import styles from "./page.module.css";
+import { Box, Button } from "@mui/material"
+import EmailIcon from "@mui/icons-material/Email"
+import styles from "./page.module.css"
 
 const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
 const reverseStyle = { flexDirection: 'row-reverse', backgroundColor: 'black' }
 const imageContainerStyle = { display: { xs: 'none', md: 'block' }, overflow: 'hidden' }
 
 const buttonStyle = { fontWeight: 'bold', marginTop: 5 }
-const buttonBlackStyle = { ...buttonStyle, color: 'black', border: '2px solid black' }
-const buttonWhiteStyle = { ...buttonStyle, color: 'white', border: '2px solid white' }
+const buttonBlackStyle = {
+  ...buttonStyle,
+  color: 'black', border: '2px solid black',
+  ':hover': { background: 'black', color: 'white' }
+}
+const buttonWhiteStyle = {
+  ...buttonStyle,
+  color: 'white',
+  border: '2px solid white',
+  ':hover': { background: 'white', color: 'black' }
+}
 
 export default function Home() {
   return (
@@ -24,6 +34,9 @@ export default function Home() {
         <div className={styles.mainContainer} style={{ textAlign: "center" }}>
           <h1 style={{ fontSize: 64 }}>Teerapat Satitporn</h1>
           <p className={styles.description}>Software Developer</p>
+        </div>
+        <div style={{ display: "flex" }}>
+          <EmailIcon />
         </div>
       </Box>
 
@@ -60,7 +73,7 @@ export default function Home() {
           <p className={styles.description}>
             Degree in <b>Information Technology</b> — see my full academic journey from school to university.
           </p>
-          <Button variant="outlined" sx={buttonBlackStyle}>
+          <Button variant="outlined" sx={buttonBlackStyle} suppressHydrationWarning>
             See More {'>>>'}
           </Button>
         </div>
@@ -81,7 +94,7 @@ export default function Home() {
             Over <b>3 years of experience</b> in software development — learn more about
             my professional roles and the companies I’ve worked with.
           </p>
-          <Button variant="outlined" sx={buttonWhiteStyle}>
+          <Button variant="outlined" sx={buttonWhiteStyle} suppressHydrationWarning>
             See More {'>>>'}
           </Button>
         </div>
