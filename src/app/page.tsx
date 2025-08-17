@@ -1,9 +1,5 @@
 import { Box, Button } from "@mui/material"
-import EmailIcon from "@mui/icons-material/Email"
-import InstagramIcon from "@mui/icons-material/Instagram"
-import FacebookIcon from "@mui/icons-material/Facebook"
-import GitHubIcon from "@mui/icons-material/GitHub"
-import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import CustomIcon from "@/components/CustomIcon"
 import styles from "./page.module.css"
 
 const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
@@ -23,8 +19,6 @@ const buttonWhiteStyle = {
   ':hover': { background: 'white', color: 'black' }
 }
 
-const iconStyles = { fontSize: 30, marginLeft: 1, marginRight: 1 }
-
 export default function Home() {
   return (
     <>
@@ -41,11 +35,11 @@ export default function Home() {
           <h1 style={{ fontSize: 64 }}>Teerapat Satitporn</h1>
           <p className={styles.description}>Software Developer</p>
           <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
-            <EmailIcon sx={iconStyles} />
-            <GitHubIcon sx={iconStyles} />
-            <LinkedInIcon sx={iconStyles} />
-            <InstagramIcon sx={iconStyles} />
-            <FacebookIcon sx={iconStyles} />
+            <CustomIcon icon="Email" />
+            <CustomIcon icon="Instagram" />
+            <CustomIcon icon="Facebook" />
+            <CustomIcon icon="GitHub" />
+            <CustomIcon icon="LinkedIn" />
           </div>
         </div>
       </Box>
