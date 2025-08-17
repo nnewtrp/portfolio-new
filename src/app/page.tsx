@@ -1,5 +1,8 @@
 import { Box, Button } from "@mui/material"
 import CustomIcon from "@/components/CustomIcon"
+import EmailIcon from "@mui/icons-material/Email"
+import PhoneIcon from "@mui/icons-material/Phone"
+import MapIcon from "@mui/icons-material/Map"
 import styles from "./page.module.css"
 
 const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
@@ -120,8 +123,34 @@ export default function Home() {
             className={styles.mainImage}
           />
         </Box>
-        <div className={styles.mainContainer} style={{ color: 'white' }}>
+        <div className={[styles.mainContainer, styles.contactContainer].join(' ')} style={{ color: 'white' }}>
           <h1 className={styles.title}>Contact</h1>
+          
+          <div>
+            {/* Email */}
+            <div className={styles.contactItem}>
+              <EmailIcon className={styles.contactItemIcon} />
+              <p className={styles.description}>
+                { process.env.NEXT_PUBLIC_EMAIL }
+              </p>
+            </div>
+
+            {/* Phone No */}
+            <div className={styles.contactItem}>
+              <PhoneIcon className={styles.contactItemIcon} />
+              <p className={styles.description}>
+                +66 80-XXX-XXXX
+              </p>
+            </div>
+
+            {/* Address */}
+            <div className={styles.contactItem}>
+              <MapIcon className={styles.contactItemIcon} />
+              <p className={styles.description}>
+                Bangkok, Thailand
+              </p>
+            </div>
+          </div>
         </div>
       </Box>
     </>
