@@ -10,20 +10,27 @@ interface props {
   color?: string
 }
 
-const hoverColors: any = {
-  "Email": "#D93025",      // Gmail red
-  "Instagram": "#E4405F",  // Instagram pink/red
-  "Facebook": "#1877F2",   // Facebook blue
-  "GitHub": "#6e40c9",     // GitHub purple
-  "LinkedIn": "#0A66C2",   // LinkedIn blue
-}
-
-const links: any = {
-  "Email": () => { window.location.href = "mailto:" + process.env.NEXT_PUBLIC_EMAIL },
-  "Instagram": () => { window.open(process.env.NEXT_PUBLIC_INSTAGRAM_URL) },
-  "Facebook": () => { window.open(process.env.NEXT_PUBLIC_FACEBOOK_URL) },
-  "GitHub": () => { window.open(process.env.NEXT_PUBLIC_GITHUB_URL) },
-  "LinkedIn": () => { window.open(process.env.NEXT_PUBLIC_LINKEDIN_URL) }
+const iconDetails: any = {
+  "Email": {
+    color: "#D93025", // Gmail red
+    link: () => { window.location.href = "mailto:" + process.env.NEXT_PUBLIC_EMAIL }
+  },
+  "Instagram": {
+    color: "#E4405F", // Instagram pink/red
+    link: () => { window.open(process.env.NEXT_PUBLIC_INSTAGRAM_URL) }
+  },
+  "Facebook": {
+    color: "#1877F2", // Facebook blue
+    link: () => { window.open(process.env.NEXT_PUBLIC_FACEBOOK_URL) }
+  },
+  "GitHub": {
+    color: "#6e40c9", // GitHub purple
+    link: () => { window.open(process.env.NEXT_PUBLIC_GITHUB_URL) }
+  },
+  "LinkedIn": {
+    color: "#0A66C2", // LinkedIn blue
+    link: () => { window.open(process.env.NEXT_PUBLIC_LINKEDIN_URL) }
+  }
 }
 
 export default function CustomIcon(props: props) {
@@ -32,19 +39,19 @@ export default function CustomIcon(props: props) {
     marginLeft: 1,
     marginRight: 1,
     color: props.color,
-    ':hover': { color: hoverColors[props.icon], cursor: "pointer" }
+    ':hover': { color: iconDetails[props.icon].color, cursor: "pointer" }
   }
 
   switch (props.icon) {
     case "Email":
-      return (<EmailIcon sx={iconStyles} onClick={links[props.icon]} />)
+      return <EmailIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
     case "Instagram":
-      return (<InstagramIcon sx={iconStyles} onClick={links[props.icon]} />)
+      return <InstagramIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
     case "Facebook":
-      return (<FacebookIcon sx={iconStyles} onClick={links[props.icon]} />)
+      return <FacebookIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
     case "GitHub":
-      return (<GitHubIcon sx={iconStyles} onClick={links[props.icon]} />)
+      return <GitHubIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
     case "LinkedIn":
-      return (<LinkedInIcon sx={iconStyles} onClick={links[props.icon]} />)
+      return <LinkedInIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
   }
 }
