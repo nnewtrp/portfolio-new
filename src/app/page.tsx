@@ -59,7 +59,7 @@ export default function Home() {
         <div className={styles.mainContainer} style={{ color: 'white' }}>
           <h1 className={styles.title}>About Me</h1>
           <p className={styles.description}>
-            I am a software developer based in <b>Bangkok, Thailand</b>.
+            I’m a software developer based in <b>Bangkok, Thailand</b>.
             I graduated with a degree in <b>Information Technology</b> and
             have over <b>3 years of experience</b> in web and application development.
           </p>
@@ -112,6 +112,15 @@ export default function Home() {
         <div className={styles.mainContainer} style={{ textAlign: 'center' }}>
           <h1 className={styles.title}>Skills & Abilities</h1>
         </div>
+        
+        {/* Programming Skills */}
+        See the programming languages, frameworks, and tools I work with
+
+        {/* Personal Projects */}
+        Look at some of the personal projects I’ve created
+
+        {/* Other Activities */}
+        Explore my activities on Kaggle, LeetCode, and more
       </Box>
 
       {/* Contact */}
