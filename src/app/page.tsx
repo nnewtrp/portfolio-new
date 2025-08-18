@@ -5,6 +5,7 @@ import PhoneIcon from "@mui/icons-material/Phone"
 import MapIcon from "@mui/icons-material/Map"
 import styles from "./page.module.css"
 
+// Styles
 const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
 const reverseStyle = { flexDirection: 'row-reverse', backgroundColor: 'black' }
 const imageContainerStyle = { display: { xs: 'none', md: 'block' }, overflow: 'hidden' }
@@ -21,6 +22,25 @@ const buttonWhiteStyle = {
   border: '2px solid white',
   ':hover': { background: 'white', color: 'black' }
 }
+
+// Skill Part Items
+const skillItems = [
+  {
+    title: "Programming Skills",
+    description: "See the programming languages, frameworks, and tools I work with",
+    link: () => {}
+  },
+  {
+    title: "Personal Projects",
+    description: "Look at some of the personal projects I’ve created",
+    link: () => {}
+  },
+  {
+    title: "Other Activities",
+    description: "Explore my activities on Kaggle, LeetCode, and more",
+    link: () => {}
+  }
+]
 
 export default function Home() {
   return (
@@ -111,16 +131,16 @@ export default function Home() {
       <Box sx={containerStyle}>
         <div className={styles.mainContainer} style={{ textAlign: 'center' }}>
           <h1 className={styles.title}>Skills & Abilities</h1>
+
+          {/* Programming Skills */}
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div className={styles.skillItemContainer}>
+              <p className={styles.skillItemDescription}>
+                See the programming languages, frameworks, and tools I work with
+              </p>
+            </div>
+          </div>
         </div>
-        
-        {/* Programming Skills */}
-        See the programming languages, frameworks, and tools I work with
-
-        {/* Personal Projects */}
-        Look at some of the personal projects I’ve created
-
-        {/* Other Activities */}
-        Explore my activities on Kaggle, LeetCode, and more
       </Box>
 
       {/* Contact */}
