@@ -134,11 +134,22 @@ export default function Home() {
 
           {/* Programming Skills */}
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <div className={styles.skillItemContainer}>
-              <p className={styles.skillItemDescription}>
-                See the programming languages, frameworks, and tools I work with
-              </p>
-            </div>
+            {skillItems.map((item) => (
+              <div key={item.title} className={styles.skillItemContainer}>
+                <h3 className={styles.skillItemTitle}>{item.title}</h3>
+                <p className={styles.skillItemDescription}>
+                  {item.description}
+                </p>
+                <Button
+                  variant="outlined"
+                  sx={buttonWhiteStyle}
+                  suppressHydrationWarning
+                  onClick={item.link}
+                >
+                  See more {'>>>'}
+                </Button>
+              </div>
+            ))}
           </div>
         </div>
       </Box>

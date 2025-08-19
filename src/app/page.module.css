@@ -33,6 +33,10 @@
   max-width: 400px;
 }
 
+.skillItemTitle {
+  font-size: 30px;
+}
+
 .skillItemDescription {
   font-size: 24px;
 }
