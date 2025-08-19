@@ -1,4 +1,5 @@
-import { Box, Button } from "@mui/material"
+'use client'
+import { Box, Button, Divider } from "@mui/material"
 import CustomIcon from "@/components/CustomIcon"
 import EmailIcon from "@mui/icons-material/Email"
 import PhoneIcon from "@mui/icons-material/Phone"
@@ -100,7 +101,7 @@ export default function Home() {
           <p className={styles.description}>
             Degree in <b>Information Technology</b> — see my full academic journey from school to university.
           </p>
-          <Button variant="outlined" sx={buttonBlackStyle} suppressHydrationWarning>
+          <Button variant="outlined" sx={buttonBlackStyle}>
             See More {'>>>'}
           </Button>
         </div>
@@ -121,33 +122,37 @@ export default function Home() {
             Over <b>3 years of experience</b> in software development — learn more about
             my professional roles and the companies I’ve worked with.
           </p>
-          <Button variant="outlined" sx={buttonWhiteStyle} suppressHydrationWarning>
+          <Button variant="outlined" sx={buttonWhiteStyle}>
             See More {'>>>'}
           </Button>
         </div>
       </Box>
 
       {/* Skills */}
-      <Box sx={containerStyle}>
+      <Box sx={[containerStyle, { height: 'auto' }]}>
         <div className={styles.mainContainer} style={{ textAlign: 'center' }}>
           <h1 className={styles.title}>Skills & Abilities</h1>
 
-          {/* Programming Skills */}
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          {/* Details */}
+          <div className={styles.skillMainItemContainer}>
             {skillItems.map((item) => (
               <div key={item.title} className={styles.skillItemContainer}>
-                <h3 className={styles.skillItemTitle}>{item.title}</h3>
-                <p className={styles.skillItemDescription}>
-                  {item.description}
-                </p>
-                <Button
-                  variant="outlined"
-                  sx={buttonWhiteStyle}
-                  suppressHydrationWarning
-                  onClick={item.link}
-                >
-                  See more {'>>>'}
-                </Button>
+                <div>
+                  <h3 className={styles.skillItemTitle}>{item.title}</h3>
+                  <Divider sx={{ margin: 2 }} />
+                  <p className={styles.skillItemDescription}>
+                    {item.description}
+                  </p>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <Button
+                    variant="outlined"
+                    sx={[buttonBlackStyle, { margin: 1 }]}
+                    onClick={item.link}
+                  >
+                    See more {'>>>'}
+                  </Button>
+                </div>
               </div>
             ))}
           </div>

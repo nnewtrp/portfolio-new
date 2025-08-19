@@ -1,3 +1,4 @@
+'use client'
 import { Box, Button } from "@mui/material"
 import styles from "./page.module.css"
 
@@ -41,7 +42,7 @@ export default function Education() {
           <p className={styles.description}>
             Degree in <b>Information Technology</b> — see my full academic journey from school to university.
           </p>
-          <Button variant="outlined" sx={buttonBlackStyle} suppressHydrationWarning>
+          <Button variant="outlined" sx={buttonBlackStyle}>
             See More {'>>>'}
           </Button>
         </div>
@@ -62,7 +63,7 @@ export default function Education() {
             Over <b>3 years of experience</b> in software development — learn more about
             my professional roles and the companies I’ve worked with.
           </p>
-          <Button variant="outlined" sx={buttonWhiteStyle} suppressHydrationWarning>
+          <Button variant="outlined" sx={buttonWhiteStyle}>
             See More {'>>>'}
           </Button>
         </div>
