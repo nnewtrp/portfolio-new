@@ -41,13 +41,14 @@ const schoolList = [
 ]
 
 // Condition
-const isBlack = (i: number) => i%2==1;
+const isOddIndex = (i: number) => i%2==1;
 
 export default function Education() {
   return (
     <>
       {schoolList.map((item, i) => {return (
-        <Box key={item.name} sx={[containerStyle, isBlack(i) ? reverseStyle : {}]}>
+        <Box key={item.name} sx={[containerStyle, isOddIndex(i) ? reverseStyle : {}]}>
+          {/* Image */}
           <Box sx={imageContainerStyle}>
             <img
               src={item.image}
@@ -55,13 +56,27 @@ export default function Education() {
               className={styles.mainImage}
             />
           </Box>
-          <div className={styles.mainContainer} style={isBlack(i) ? { color: 'white' } : {}}>
+
+          {/* Info */}
+          <div className={styles.mainContainer} style={isOddIndex(i) ? { color: 'white' } : {}}>
+            {/* Header */}
             <h1 className={styles.title}>{item.name}</h1>
+
+            {/* Color Bar */}
+            <div className={styles.colorContainer}>
+              {item.colors.map((color, i) => { return (
+                <div key={i} className={styles.colorItem} style={{ background: color }} />
+              )})}
+            </div>
+
+            {/* Detail */}
             <p className={styles.description}>{item.program}</p>
             <p className={styles.period}>{item.period}</p>
+
+            {/* Link Button */}
             <Button
               variant="outlined"
-              sx={isBlack(i) ? buttonWhiteStyle : buttonBlackStyle}
+              sx={isOddIndex(i) ? buttonWhiteStyle : buttonBlackStyle}
               onClick={item.link}
             >
               More Info {'>>>'}
