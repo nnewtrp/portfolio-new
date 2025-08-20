@@ -1,6 +1,6 @@
 'use client'
 import { Box, Button, Divider } from "@mui/material"
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import CustomIcon from "@/components/CustomIcon"
 import EmailIcon from "@mui/icons-material/Email"
 import PhoneIcon from "@mui/icons-material/Phone"
@@ -130,7 +130,11 @@ export default function Home() {
             Over <b>3 years of experience</b> in software development — learn more about
             my professional roles and the companies I’ve worked with.
           </p>
-          <Button variant="outlined" sx={buttonWhiteStyle}>
+          <Button
+            variant="outlined"
+            sx={buttonWhiteStyle}
+            onClick={() => {}}
+          >
             See More {'>>>'}
           </Button>
         </div>

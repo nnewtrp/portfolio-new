@@ -1,4 +1,3 @@
-'use client'
 import EmailIcon from "@mui/icons-material/Email"
 import InstagramIcon from "@mui/icons-material/Instagram"
 import FacebookIcon from "@mui/icons-material/Facebook"

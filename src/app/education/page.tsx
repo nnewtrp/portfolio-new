@@ -46,8 +46,8 @@ const isBlack = (i: number) => i%2==1;
 export default function Education() {
   return (
     <>
-      {schoolList.map((item, i) => {(
-        <Box sx={[containerStyle, isBlack(i) ? reverseStyle : {}]}>
+      {schoolList.map((item, i) => {return (
+        <Box key={item.name} sx={[containerStyle, isBlack(i) ? reverseStyle : {}]}>
           <Box sx={imageContainerStyle}>
             <img
               src={item.image}
