@@ -159,7 +159,7 @@ export default function Home() {
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
                   <Button
                     variant="outlined"
-                    sx={[buttonBlackStyle, { margin: 1 }]}
+                    sx={[buttonBlackStyle, { margin: 1, marginTop: 2 }]}
                     onClick={item.link}
                   >
                     See more {'>>>'}
