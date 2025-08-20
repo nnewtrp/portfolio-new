@@ -176,7 +176,7 @@ export default function Home() {
             <div className={styles.contactItem}>
               <EmailIcon className={styles.contactItemIcon} />
               <p className={styles.description}>
-                { process.env.NEXT_PUBLIC_EMAIL }
+                {process.env.NEXT_PUBLIC_EMAIL}
               </p>
             </div>
 

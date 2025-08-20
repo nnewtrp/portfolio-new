@@ -22,52 +22,49 @@ const buttonWhiteStyle = {
 
 // School Info List
 const schoolList = [
-  { name: "", period: "", program: "", colors: [] }
+  {
+    name: "Sirindhorn International Institute of Technology, Thammasat University",
+    program: "Bachelor Degree of Science - Information Technology Curriculum",
+    period: "AUG 2018 - MAY 2022",
+    colors: ["#FFD13F", "#C3002F"],
+    image: "/education/siit.jpg",
+    link: () => { window.open("https://www.siit.tu.ac.th/") }
+  },
+  {
+    name: "Bangkok Christian College",
+    program: "Science - Math Program",
+    period: "MAY 2007 - FEB 2018",
+    colors: ["#2D1B41", "#E8A336"],
+    image: "/education/bcc.jpg",
+    link: () => {window.open("https://www.bcc.ac.th/")}
+  }
 ]
 
 export default function Education() {
   return (
     <>
-      {/* White */}
-      <Box sx={containerStyle}>
-        <Box sx={imageContainerStyle}>
-          <img
-            src="/home/study.jpg"
-            alt="Picture of the author"
-            className={styles.mainImage}
-          />
+      {schoolList.map((item, i) => {(
+        <Box sx={[containerStyle, i%2==1 ? reverseStyle : {}]}>
+          <Box sx={imageContainerStyle}>
+            <img
+              src={item.image}
+              alt="Picture of the author"
+              className={styles.mainImage}
+            />
+          </Box>
+          <div className={styles.mainContainer} style={{ color: 'white' }}>
+            <h1 className={styles.title}>{item.name}</h1>
+            <p className={styles.description}>{item.program}</p>
+            <Button
+              variant="outlined"
+              sx={i%2==1 ? buttonBlackStyle : buttonWhiteStyle}
+              onClick={item.link}
+            >
+              More Info {'>>>'}
+            </Button>
+          </div>
         </Box>
-        <div className={styles.mainContainer} style={{ color: 'white' }}>
-          <h1 className={styles.title}>Education</h1>
-          <p className={styles.description}>
-            Degree in <b>Information Technology</b> — see my full academic journey from school to university.
-          </p>
-          <Button variant="outlined" sx={buttonBlackStyle}>
-            See More {'>>>'}
-          </Button>
-        </div>
-      </Box>
-
-      {/* Black */}
-      <Box sx={[containerStyle, reverseStyle]}>
-        <Box sx={imageContainerStyle}>
-          <img
-            src="/home/work.jpg"
-            alt="Picture of the author"
-            className={styles.mainImage}
-          />
-        </Box>
-        <div className={styles.mainContainer}>
-          <h1 className={styles.title}>Work Experience</h1>
-          <p className={styles.description}>
-            Over <b>3 years of experience</b> in software development — learn more about
-            my professional roles and the companies I’ve worked with.
-          </p>
-          <Button variant="outlined" sx={buttonWhiteStyle}>
-            See More {'>>>'}
-          </Button>
-        </div>
-      </Box>
+      )})}
     </>
   )
 }
