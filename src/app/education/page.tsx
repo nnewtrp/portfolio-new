@@ -3,11 +3,11 @@ import { Box, Button } from "@mui/material"
 import styles from "./page.module.css"
 
 // Styles
-const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
+const containerStyle = { flexGrow: 1, height: 400, overflow: 'hidden', display: 'flex' }
 const reverseStyle = { flexDirection: 'row-reverse', backgroundColor: 'black' }
-const imageContainerStyle = { display: { xs: 'none', md: 'block' }, overflow: 'hidden' }
+const imageContainerStyle = { display: { xs: 'none', md: 'none', lg: 'block' }, overflow: 'hidden' }
 
-const buttonStyle = { fontWeight: 'bold', marginTop: 5 }
+const buttonStyle = { fontWeight: 'bold', marginTop: 2 }
 const buttonBlackStyle = {
   ...buttonStyle,
   color: 'black', border: '2px solid black',
@@ -58,9 +58,10 @@ export default function Education() {
           <div className={styles.mainContainer} style={isBlack(i) ? { color: 'white' } : {}}>
             <h1 className={styles.title}>{item.name}</h1>
             <p className={styles.description}>{item.program}</p>
+            <p className={styles.period}>{item.period}</p>
             <Button
               variant="outlined"
-              sx={isBlack(i) ? buttonBlackStyle : buttonWhiteStyle}
+              sx={isBlack(i) ? buttonWhiteStyle : buttonBlackStyle}
               onClick={item.link}
             >
               More Info {'>>>'}
