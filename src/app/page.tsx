@@ -92,7 +92,7 @@ export default function Home() {
         <Box sx={imageContainerStyle}>
           <img
             src="/home/study.jpg"
-            alt="Picture of the author"
+            alt="Picture of the lecture room"
             className={styles.mainImage}
           />
         </Box>
@@ -112,7 +112,7 @@ export default function Home() {
         <Box sx={imageContainerStyle}>
           <img
             src="/home/work.jpg"
-            alt="Picture of the author"
+            alt="Picture of the employees working"
             className={styles.mainImage}
           />
         </Box>

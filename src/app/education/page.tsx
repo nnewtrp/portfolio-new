@@ -48,7 +48,7 @@ export default function Education() {
           <Box sx={imageContainerStyle}>
             <img
               src={item.image}
-              alt="Picture of the author"
+              alt={item.name}
               className={styles.mainImage}
             />
           </Box>
