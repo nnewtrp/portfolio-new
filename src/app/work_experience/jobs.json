@@ -1,9 +1,10 @@
 [
   {
     "company": "Perfect Companion Group",
+    "short_name": "pcg",
     "logo": "",
     "position": "Web Developer",
-    "startDate": "",
+    "startDate": "2022-06-01",
     "endDate": ""
   }
 ]
