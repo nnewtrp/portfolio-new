@@ -1,5 +1,6 @@
 'use client'
 import { Box, Button, Divider } from "@mui/material"
+import { useRouter } from 'next/router'
 import CustomIcon from "@/components/CustomIcon"
 import EmailIcon from "@mui/icons-material/Email"
 import PhoneIcon from "@mui/icons-material/Phone"
@@ -44,6 +45,8 @@ const skillItems = [
 ]
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <>
       {/* Main */}
@@ -99,9 +102,14 @@ export default function Home() {
         <div className={styles.mainContainer}>
           <h1 className={styles.title}>Education</h1>
           <p className={styles.description}>
-            Degree in <b>Information Technology</b> — see my full academic journey from school to university.
+            Degree in <b>Information Technology</b> — see my full
+            academic journey from school to university.
           </p>
-          <Button variant="outlined" sx={buttonBlackStyle}>
+          <Button
+            variant="outlined"
+            sx={buttonBlackStyle}
+            onClick={() => {router.push("/education")}}
+          >
             See More {'>>>'}
           </Button>
         </div>

@@ -40,11 +40,14 @@ const schoolList = [
   }
 ]
 
+// Condition
+const isBlack = (i: number) => i%2==1;
+
 export default function Education() {
   return (
     <>
       {schoolList.map((item, i) => {(
-        <Box sx={[containerStyle, i%2==1 ? reverseStyle : {}]}>
+        <Box sx={[containerStyle, isBlack(i) ? reverseStyle : {}]}>
           <Box sx={imageContainerStyle}>
             <img
               src={item.image}
@@ -52,12 +55,12 @@ export default function Education() {
               className={styles.mainImage}
             />
           </Box>
-          <div className={styles.mainContainer} style={{ color: 'white' }}>
+          <div className={styles.mainContainer} style={isBlack(i) ? { color: 'white' } : {}}>
             <h1 className={styles.title}>{item.name}</h1>
             <p className={styles.description}>{item.program}</p>
             <Button
               variant="outlined"
-              sx={i%2==1 ? buttonBlackStyle : buttonWhiteStyle}
+              sx={isBlack(i) ? buttonBlackStyle : buttonWhiteStyle}
               onClick={item.link}
             >
               More Info {'>>>'}
