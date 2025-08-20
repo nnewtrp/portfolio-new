@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Sirindhorn International Institute of Technology, Thammasat University",
+    "program": "Bachelor Degree of Science - Information Technology Curriculum",
+    "period": "AUG 2018 - MAY 2022",
+    "colors": ["#FFD13F", "#C3002F"],
+    "image": "/education/siit.jpg",
+    "link": "https://www.siit.tu.ac.th/"
+  },
+  {
+    "name": "Bangkok Christian College",
+    "program": "Science - Math Program",
+    "period": "MAY 2007 - FEB 2018",
+    "colors": ["#2D1B41", "#E8A336"],
+    "image": "/education/bcc.jpg",
+    "link": "https://www.bcc.ac.th/"
+  }
+]

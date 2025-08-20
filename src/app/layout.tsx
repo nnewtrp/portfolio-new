@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
-import { Box, AppBar, Toolbar, Typography, Button } from "@mui/material"
-import "./globals.css";
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
+import { Box, AppBar, Toolbar, Typography } from "@mui/material"
+import "./globals.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

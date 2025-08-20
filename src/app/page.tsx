@@ -133,7 +133,7 @@ export default function Home() {
           <Button
             variant="outlined"
             sx={buttonWhiteStyle}
-            onClick={() => {}}
+            onClick={() => {router.push("/work_experience")}}
           >
             See More {'>>>'}
           </Button>
