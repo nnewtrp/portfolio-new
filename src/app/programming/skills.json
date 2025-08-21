@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Programming Languages",
+    "items": [
+      { "name": "HTML", "icon": "" },
+      { "name": "CSS", "icon": "" },
+      { "name": "JavaScript", "icon": "" },
+      { "name": "TypeScript", "icon": "" },
+      { "name": "Python", "icon": "" },
+      { "name": "PHP", "icon": "" },
+      { "name": "Java", "icon": "" },
+      { "name": "C#", "icon": "" },
+      { "name": "C++", "icon": "" }
+    ]
+  },
+  {
+    "title": "Frameworks",
+    "items": [
+      { "name": "Vue", "icon": "" },
+      { "name": "Nuxt", "icon": "" },
+      { "name": "React", "icon": "" },
+      { "name": "React Native", "icon": "" },
+      { "name": "Next", "icon": "" },
+      { "name": "ASP.Net", "icon": "" },
+      { "name": "Cypress", "icon": "" }
+    ]
+  },
+  {
+    "title": "Other Tools",
+    "items": [
+      { "name": "Github", "icon": "" },
+      { "name": "Gitlab", "icon": "" },
+      { "name": "Maya", "icon": "" },
+      { "name": "Unity", "icon": "" }
+    ]
+  }
+]

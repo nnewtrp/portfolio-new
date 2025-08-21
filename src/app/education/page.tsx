@@ -27,7 +27,7 @@ const isOddIndex = (i: number) => i%2==1;
 export default function Education() {
   return (
     <>
-      {schoolList.map((item, i) => {return (
+      {schoolList.map((item, i) => (
         <Box key={item.name} sx={[containerStyle, isOddIndex(i) ? reverseStyle : {}]}>
           {/* Image */}
           <Box sx={imageContainerStyle}>
@@ -64,7 +64,7 @@ export default function Education() {
             </Button>
           </div>
         </Box>
-      )})}
+      ))}
     </>
   )
 }

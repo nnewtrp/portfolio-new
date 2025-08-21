@@ -11,7 +11,7 @@ export default function Education() {
       <h1 className={styles.title}>Work Experience</h1>
 
       {/* Work Experience Timeline */}
-      {jobList.map((item) => {return (
+      {jobList.map((item) => (
         <div key={item.short_name} className={styles.itemContainer}>
           {/* Image */}
           <div className={styles.imageContainer}>
@@ -31,7 +31,7 @@ export default function Education() {
             </p>
           </div>
         </div>
-      )})}
+      ))}
     </div>
   )
 }

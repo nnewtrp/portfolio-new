@@ -1,5 +1,8 @@
+.mainContainer {
+  padding: 25px 40px;
+}
+
 .title {
-  font-size: 48px;
-  text-decoration: underline;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }

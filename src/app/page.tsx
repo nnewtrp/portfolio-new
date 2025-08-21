@@ -165,7 +165,7 @@ export default function Home() {
               <div key={item.title} className={styles.skillItemContainer}>
                 <div>
                   <h3 className={styles.skillItemTitle}>{item.title}</h3>
-                  <Divider sx={{ margin: 2 }} />
+                  <Divider sx={{ marginY: 2, marginTop: 1 }} />
                   <p className={styles.skillItemDescription}>
                     {item.description}
                   </p>
@@ -173,7 +173,7 @@ export default function Home() {
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
                   <Button
                     variant="outlined"
-                    sx={[buttonBlackStyle, { margin: 1, marginTop: 2 }]}
+                    sx={[buttonBlackStyle, { marginX: 1, marginTop: 2 }]}
                     onClick={() => {router.push(item.link)}}
                   >
                     See more {'>>>'}
