@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email"
 import PhoneIcon from "@mui/icons-material/Phone"
 import MapIcon from "@mui/icons-material/Map"
 import styles from "./page.module.css"
-import jobList from "./work_experience/jobs.json"
+import jobList from "./experience/jobs.json"
 import moment from "moment"
 
 // Styles
@@ -147,7 +147,7 @@ export default function Home() {
           <Button
             variant="outlined"
             sx={buttonWhiteStyle}
-            onClick={() => {router.push("/work_experience")}}
+            onClick={() => {router.push("/experience")}}
           >
             See More {'>>>'}
           </Button>
