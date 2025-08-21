@@ -32,17 +32,17 @@ const skillItems = [
   {
     title: "Programming Skills",
     description: "See the programming languages, frameworks, and tools I work with",
-    link: () => {}
+    link: "/programming"
   },
   {
     title: "Personal Projects",
     description: "Look at some of the personal projects I’ve created",
-    link: () => {}
+    link: "/project"
   },
   {
     title: "Other Activities",
     description: "Explore my activities on Kaggle, LeetCode, and more",
-    link: () => {}
+    link: "/activity"
   }
 ]
 
@@ -174,7 +174,7 @@ export default function Home() {
                   <Button
                     variant="outlined"
                     sx={[buttonBlackStyle, { margin: 1, marginTop: 2 }]}
-                    onClick={item.link}
+                    onClick={() => {router.push(item.link)}}
                   >
                     See more {'>>>'}
                   </Button>
