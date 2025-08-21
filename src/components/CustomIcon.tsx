@@ -6,7 +6,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn"
 
 interface props {
   icon: string,
-  color?: string
+  color?: string,
+  onClick?: Function
 }
 
 const iconDetails: any = {
@@ -40,16 +41,21 @@ export default function CustomIcon(props: props) {
     ':hover': { color: iconDetails[props.icon].color, cursor: "pointer" }
   }
 
+  const onClickFunction = () => {
+    if (props.onClick) props.onClick()
+    else iconDetails[props.icon].link()
+  }
+
   switch (props.icon) {
     case "Email":
-      return <EmailIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
+      return <EmailIcon sx={iconStyles} onClick={() => onClickFunction()} />
     case "Instagram":
-      return <InstagramIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
+      return <InstagramIcon sx={iconStyles} onClick={() => onClickFunction()} />
     case "Facebook":
-      return <FacebookIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
+      return <FacebookIcon sx={iconStyles} onClick={() => onClickFunction()} />
     case "GitHub":
-      return <GitHubIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
+      return <GitHubIcon sx={iconStyles} onClick={() => onClickFunction()} />
     case "LinkedIn":
-      return <LinkedInIcon sx={iconStyles} onClick={iconDetails[props.icon].link} />
+      return <LinkedInIcon sx={iconStyles} onClick={() => onClickFunction()} />
   }
 }
