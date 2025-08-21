@@ -1,5 +1,30 @@
+.mainContainer {
+  padding: 25px 40px;
+}
+
 .title {
-  font-size: 48px;
-  text-decoration: underline;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.itemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 50px;
+  min-width: 200px;
+  margin: 10px
+}
+
+.textContainer {
+  flex: 1;
+  text-align: center;
 }
