@@ -2,9 +2,10 @@
   {
     "company": "Perfect Companion Group",
     "short_name": "pcg",
-    "logo": "",
+    "logo": "/work_experience/company_logo/pcg.png",
+    "color": "#19335A",
     "position": "Web Developer",
     "startDate": "2022-06-01",
-    "endDate": ""
+    "endDate": null
   }
 ]

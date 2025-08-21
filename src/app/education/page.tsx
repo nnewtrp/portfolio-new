@@ -45,7 +45,7 @@ export default function Education() {
 
             {/* Color Bar */}
             <div className={styles.colorContainer}>
-              {item.colors.map((color, i) => { return (
+              {item.colors.map((color, i) => {return (
                 <div key={i} className={styles.colorItem} style={{ background: color }} />
               )})}
             </div>

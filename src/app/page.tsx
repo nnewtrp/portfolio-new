@@ -6,6 +6,8 @@ import EmailIcon from "@mui/icons-material/Email"
 import PhoneIcon from "@mui/icons-material/Phone"
 import MapIcon from "@mui/icons-material/Map"
 import styles from "./page.module.css"
+import jobList from "./work_experience/jobs.json"
+import moment from "moment"
 
 // Styles
 const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
@@ -43,6 +45,18 @@ const skillItems = [
     link: () => {}
   }
 ]
+
+// Methods
+const getWorkYear = () => {
+  const firstJob = jobList[jobList.length-1]
+  const startDate = moment(firstJob.startDate)
+  const today = moment()
+  
+  let workYear = today.year() - startDate.year()
+  if (startDate.month() > today.month()) workYear--
+
+  return workYear
+}
 
 export default function Home() {
   const router = useRouter()
@@ -85,7 +99,7 @@ export default function Home() {
           <p className={styles.description}>
             I’m a software developer based in <b>Bangkok, Thailand</b>.
             I graduated with a degree in <b>Information Technology</b> and
-            have over <b>3 years of experience</b> in web and application development.
+            have over <b>{getWorkYear()} years of experience</b> in web and application development.
           </p>
         </div>
       </Box>
@@ -127,7 +141,7 @@ export default function Home() {
         <div className={styles.mainContainer} style={{ color: 'white' }}>
           <h1 className={styles.title}>Work Experience</h1>
           <p className={styles.description}>
-            Over <b>3 years of experience</b> in software development — learn more about
+            Over <b>{getWorkYear()} years of experience</b> in software development — learn more about
             my professional roles and the companies I’ve worked with.
           </p>
           <Button

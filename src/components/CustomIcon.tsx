@@ -35,8 +35,7 @@ const iconDetails: any = {
 export default function CustomIcon(props: props) {
   const iconStyles = {
     fontSize: 30,
-    marginLeft: 1,
-    marginRight: 1,
+    marginX: 1,
     color: props.color,
     ':hover': { color: iconDetails[props.icon].color, cursor: "pointer" }
   }
