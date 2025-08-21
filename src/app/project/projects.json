@@ -3,10 +3,16 @@
     "title": "Personal Projects",
     "items": [
       {
-        "name": "",
-        "description": "",
+        "name": "👨🏻‍💼 Portfolio Website",
+        "description": "My portfolio website using Next.js and Material UI",
         "web_url": "",
-        "github_url": ""
+        "github_path": "portfolio-new"
+      },
+      {
+        "name": "🚀 Cypress Automation",
+        "description": "Uses Cypress.js to automate browser interactions and solve the Browser Automation Challenge",
+        "web_url": null,
+        "github_path": "cypress_showdown_space_automation"
       }
     ]
   },
@@ -14,10 +20,28 @@
     "title": "University Projects",
     "items": [
       {
-        "name": "",
-        "description": "",
-        "web_url": "",
-        "github_url": ""
+        "name": "🌾 Crop Insurance",
+        "description": "A web application designed to help farmers affected by natural disasters report their issues to government officials",
+        "web_url": null,
+        "github_path": "CropInsurance_2"
+      },
+      {
+        "name": "✈️ Flight Reservation",
+        "description": "A mobile application for flight reservations built with React Native, Expo, and Firebase",
+        "web_url": null,
+        "github_path": "FlightReservation"
+      },
+      {
+        "name": "🚌 Shuttle Bus Management",
+        "description": "A system designed to manage student transportation shuttle buses within Thammasat University",
+        "web_url": null,
+        "github_path": "Engy2"
+      },
+      {
+        "name": "🔐 File Encryption",
+        "description": "Encrypt and decrypt files with RSA and custom-built ciphers using Python",
+        "web_url": null,
+        "github_path": "python-file-encryption"
       }
     ]
   }
