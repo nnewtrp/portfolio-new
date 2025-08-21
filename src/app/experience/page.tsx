@@ -4,7 +4,7 @@ import styles from "./page.module.css"
 import jobList from "./jobs.json"
 import moment from "moment"
 
-export default function Education() {
+export default function ExperiencePage() {
   return (
     <div className={styles.mainContainer}>
       {/* Title */}

@@ -2,7 +2,7 @@
 import { Divider } from "@mui/material"
 import styles from "./page.module.css"
 
-export default function Education() {
+export default function ActivityPage() {
   return (
     <div className={styles.mainContainer}>
       {/* Title */}

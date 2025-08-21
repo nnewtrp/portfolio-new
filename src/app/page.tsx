@@ -58,7 +58,7 @@ const getWorkYear = () => {
   return workYear
 }
 
-export default function Home() {
+export default function HomePage() {
   const router = useRouter()
 
   return (

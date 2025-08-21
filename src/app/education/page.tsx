@@ -24,7 +24,7 @@ const buttonWhiteStyle = {
 // Condition
 const isOddIndex = (i: number) => i%2==1;
 
-export default function Education() {
+export default function EducationPage() {
   return (
     <>
       {schoolList.map((item, i) => (
