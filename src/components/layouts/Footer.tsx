@@ -8,6 +8,7 @@ const iconColor = "white"
 export default function Footer() {
   return (
     <>
+      <div style={{ flex: 1 }} />
       <Divider />
       <div className={styles.bottomBarContainer}>
         <div style={{ flex: 1 }} />

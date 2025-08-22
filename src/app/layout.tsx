@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <AppRouterCacheProvider>
           {/* Nav Bar */}
-          <Box sx={{ flexGrow: 1 }}>
+          <Box>
             <AppBar position="static" color="info" sx={{ backgroundColor: 'black' }}>
               <Toolbar>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -44,7 +44,6 @@ export default function RootLayout({
           {children}
 
           {/* Footer */}
-          <div style={{ flex: 1 }} />
           <Footer />
         </AppRouterCacheProvider>
       </body>
