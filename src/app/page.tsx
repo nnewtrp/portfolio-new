@@ -77,10 +77,10 @@ export default function HomePage() {
           <p className={styles.description}>Software Developer</p>
           <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
             <CustomIcon icon="Email" />
-            <CustomIcon icon="Instagram" />
-            <CustomIcon icon="Facebook" />
             <CustomIcon icon="GitHub" />
             <CustomIcon icon="LinkedIn" />
+            <CustomIcon icon="Instagram" />
+            <CustomIcon icon="Facebook" />
           </div>
         </div>
       </Box>

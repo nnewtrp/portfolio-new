@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
-import { Box, AppBar, Toolbar, Typography } from "@mui/material"
+import NavBar from "@/components/layouts/NavBar"
 import Footer from "@/components/layouts/Footer"
 import "./globals.css"
 
@@ -30,15 +30,8 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <AppRouterCacheProvider>
           {/* Nav Bar */}
-          <Box>
-            <AppBar position="static" color="info" sx={{ backgroundColor: 'black' }}>
-              <Toolbar>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  <b>Teerapat Satitporn</b>
-                </Typography>
-              </Toolbar>
-            </AppBar>
-          </Box>
+          <NavBar />
+          <div style={{ marginTop: '64px' }} />
 
           {/* Body */}
           {children}

@@ -13,10 +13,10 @@ export default function Footer() {
       <div className={styles.bottomBarContainer}>
         <div style={{ flex: 1 }} />
         <CustomIcon icon="Email" color={iconColor} />
-        <CustomIcon icon="Instagram" color={iconColor} />
-        <CustomIcon icon="Facebook" color={iconColor} />
         <CustomIcon icon="GitHub" color={iconColor} />
         <CustomIcon icon="LinkedIn" color={iconColor} />
+        <CustomIcon icon="Instagram" color={iconColor} />
+        <CustomIcon icon="Facebook" color={iconColor} />
       </div>
     </>
   )
