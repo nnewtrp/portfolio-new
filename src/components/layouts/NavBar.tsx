@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 const menuList = [
   { title: "Home", path: "/" },
   { title: "Education", path: "/education" },
-  { title: "Work Experiance", path: "/experiance" },
+  { title: "Work Experience", path: "/experience" },
   { title: "Programming Skills", path: "/programming" },
   { title: "Personal Projects", path: "/project" },
   { title: "Other Activities", path: "/activity" }
@@ -40,7 +40,12 @@ export default function NavBar() {
 
         {/* Menu */}
         <Button onClick={handleMenu} sx={{ color: "white", fontWeight: "bold" }}>
-          Menu <ArrowDropDownIcon sx={{ rotate: anchorEl ? "180deg" : null }} />
+          Menu <ArrowDropDownIcon sx={{
+            "@keyframes rotate-icon": { from: { rotate: "0deg" }, to: { rotate: "180deg" } },
+            "@keyframes reverse-icon": { from: { rotate: "180deg" }, to: { rotate: "0deg" } },
+            animation: anchorEl ? "rotate-icon 0.5s" : "reverse-icon 0.5s",
+            rotate: anchorEl ? "180deg" : "0deg"
+          }} />
         </Button>
         <Menu
           id="menu-appbar"
