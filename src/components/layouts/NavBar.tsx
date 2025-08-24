@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
-import { AppBar, Toolbar, Typography, Menu, MenuItem, Button } from "@mui/material"
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { AppBar, Toolbar, Typography, Menu, MenuItem, Button, Divider } from "@mui/material"
+import MenuDropdownIcon from "./MenuDropDownIcon";
 import { useRouter } from 'next/navigation'
 
 const menuList = [
@@ -40,12 +40,7 @@ export default function NavBar() {
 
         {/* Menu */}
         <Button onClick={handleMenu} sx={{ color: "white", fontWeight: "bold" }}>
-          Menu <ArrowDropDownIcon sx={{
-            "@keyframes rotate-icon": { from: { rotate: "0deg" }, to: { rotate: "180deg" } },
-            "@keyframes reverse-icon": { from: { rotate: "180deg" }, to: { rotate: "0deg" } },
-            animation: anchorEl ? "rotate-icon 0.5s" : "reverse-icon 0.5s",
-            rotate: anchorEl ? "180deg" : "0deg"
-          }} />
+          Menu <MenuDropdownIcon isRotate={!!anchorEl} />
         </Button>
         <Menu
           id="menu-appbar"
@@ -64,7 +59,12 @@ export default function NavBar() {
           onClose={handleClose}
         >
           {menuList.map((menu) => (
-            <MenuItem key={menu.title} onClick={() => handleMenuOnClick(menu.path)}>{menu.title}</MenuItem>
+            <div key={menu.title}>
+              <MenuItem onClick={() => handleMenuOnClick(menu.path)} sx={{ fontWeight: "bold" }}>
+                {menu.title}
+              </MenuItem>
+              <Divider />
+            </div>
           ))}
         </Menu>
       </Toolbar>
