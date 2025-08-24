@@ -2,36 +2,36 @@
   {
     "title": "Programming Languages",
     "items": [
-      { "name": "HTML", "icon": "" },
-      { "name": "CSS", "icon": "" },
-      { "name": "JavaScript", "icon": "" },
-      { "name": "TypeScript", "icon": "" },
-      { "name": "Python", "icon": "" },
-      { "name": "PHP", "icon": "" },
-      { "name": "Java", "icon": "" },
-      { "name": "C#", "icon": "" },
-      { "name": "C++", "icon": "" }
+      { "name": "HTML", "icon": "html5/html5-original.svg" },
+      { "name": "CSS", "icon": "css3/css3-original.svg" },
+      { "name": "JavaScript", "icon": "javascript/javascript-original.svg" },
+      { "name": "TypeScript", "icon": "typescript/typescript-original.svg" },
+      { "name": "Python", "icon": "python/python-original.svg" },
+      { "name": "PHP", "icon": "php/php-original.svg" },
+      { "name": "Java", "icon": "java/java-original.svg" },
+      { "name": "C#", "icon": "csharp/csharp-original.svg" },
+      { "name": "C++", "icon": "cplusplus/cplusplus-original.svg" }
     ]
   },
   {
     "title": "Frameworks",
     "items": [
-      { "name": "Vue", "icon": "" },
-      { "name": "Nuxt", "icon": "" },
-      { "name": "React", "icon": "react/react-native.svg" },
-      { "name": "React Native", "icon": "react/react-original.svg" },
-      { "name": "Next", "icon": "" },
-      { "name": "ASP.Net", "icon": "" },
-      { "name": "Cypress", "icon": "" }
+      { "name": "Vue.js", "icon": "vuejs/vuejs-original.svg" },
+      { "name": "Nuxt.js", "icon": "nuxtjs/nuxtjs-original.svg" },
+      { "name": "React", "icon": "react/react-original.svg" },
+      { "name": "React Native", "icon": "react/react-original.svg" }, 
+      { "name": "Next.js", "icon": "nextjs/nextjs-original.svg" },
+      { "name": "ASP.Net Core", "icon": "dotnetcore/dotnetcore-original.svg" },
+      { "name": "Cypress", "icon": "cypressio/cypressio-original.svg" }
     ]
   },
   {
     "title": "Other Tools",
     "items": [
-      { "name": "Github", "icon": "" },
-      { "name": "Gitlab", "icon": "" },
-      { "name": "Maya", "icon": "" },
-      { "name": "Unity", "icon": "" }
+      { "name": "Github", "icon": "github/github-original.svg" },
+      { "name": "Gitlab", "icon": "gitlab/gitlab-original.svg" },
+      { "name": "Maya", "icon": "maya/maya-original.svg" },
+      { "name": "Unity", "icon": "unity/unity-original.svg" }
     ]
   }
 ]

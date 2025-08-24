@@ -3,6 +3,9 @@ import { Divider, Grid } from "@mui/material"
 import styles from "./page.module.css"
 import skillList from "./skills.json"
 
+const getImageIconPath = (path: string) => process.env.NEXT_PUBLIC_PROGRAMMING_ICON_URL + path
+const iconSize = 40
+
 export default function ProgrammingPage() {
   return (
     <>
@@ -17,8 +20,8 @@ export default function ProgrammingPage() {
             {header.items.map((item) => (
               <Grid key={item.name} size={{ xs: 6, sm: 4, md: 3, lg: 2, xl: 1.5 }} className={styles.item}>
                 {/* Image */}
-                <div className={styles.imageContainer}>
-                  {/* <img src={item.icon} alt={item.name} className={styles.icon} /> */}
+                <div className={styles.iconContainer}>
+                  <img src={getImageIconPath(item.icon)} alt={item.name} height={iconSize} width={iconSize} />
                 </div>
                 
                 <Divider orientation="vertical" flexItem />
