@@ -3,6 +3,9 @@ import InstagramIcon from "@mui/icons-material/Instagram"
 import FacebookIcon from "@mui/icons-material/Facebook"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import TwitterIcon from "@mui/icons-material/Twitter"
+import RedditIcon from "@mui/icons-material/Reddit"
+import LanguageIcon from '@mui/icons-material/Language';
 
 interface props {
   icon: string,
@@ -30,6 +33,18 @@ const iconDetails: any = {
   "LinkedIn": {
     color: "#0A66C2", // LinkedIn blue
     link: () => { window.open(process.env.NEXT_PUBLIC_LINKEDIN_URL) }
+  },
+  "Twitter": {
+    color: "#1DA1F2", // Twitter blue
+    link: () => { window.open(process.env.NEXT_PUBLIC_TWITTER_URL) }
+  },
+  "Reddit": {
+    color: "#FF4500", // Reddit orange
+    link: () => { window.open(process.env.NEXT_PUBLIC_REDDIT_URL) }
+  },
+  "Internet": {
+    color: "#4285F4", // Google blue as default Internet color
+    link: () => {}
   }
 }
 
@@ -57,5 +72,11 @@ export default function CustomIcon(props: props) {
       return <GitHubIcon sx={iconStyles} onClick={() => onClickFunction()} />
     case "LinkedIn":
       return <LinkedInIcon sx={iconStyles} onClick={() => onClickFunction()} />
+    case "Twitter":
+      return <TwitterIcon sx={iconStyles} onClick={() => onClickFunction()} />
+    case "Reddit":
+      return <RedditIcon sx={iconStyles} onClick={() => onClickFunction()} />
+    case "Website":
+      return <LanguageIcon sx={iconStyles} onClick={() => onClickFunction()} />
   }
 }

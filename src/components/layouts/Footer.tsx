@@ -23,6 +23,8 @@ export default function Footer() {
         <CustomIcon icon="LinkedIn" color={iconColor} />
         <CustomIcon icon="Instagram" color={iconColor} />
         <CustomIcon icon="Facebook" color={iconColor} />
+        <CustomIcon icon="Twitter" color={iconColor} />
+        <CustomIcon icon="Reddit" color={iconColor} />
       </div>
     </>
   )
