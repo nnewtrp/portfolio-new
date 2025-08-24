@@ -1,8 +1,9 @@
 'use client'
 import { useState } from "react";
-import { AppBar, Toolbar, Typography, Menu, MenuItem, Button, Divider } from "@mui/material"
+import { AppBar, Toolbar, Typography, Menu, MenuItem, Button, Divider, Box } from "@mui/material"
 import MenuDropdownIcon from "./MenuDropDownIcon";
 import { useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 const menuList = [
   { title: "Home", path: "/" },
@@ -15,7 +16,10 @@ const menuList = [
 
 export default function NavBar() {
   const router = useRouter()
+  const pathName = usePathname()
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
+
+  const isHomePath = pathName != '/'
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)
@@ -30,6 +34,13 @@ export default function NavBar() {
     handleClose()
   }
 
+  const getPageTitle = () => {
+    if (isHomePath) {
+      return '— ' + menuList.filter((menu) => menu.path == pathName)[0]?.title
+    }
+    return
+  }
+
   return (
     <AppBar sx={{ backgroundColor: 'black' }}>
       <Toolbar>
@@ -37,10 +48,14 @@ export default function NavBar() {
         <Typography
           variant="h6"
           component="div"
-          sx={{ flexGrow: 1, fontWeight: 'bold', ':hover': { cursor: "pointer" } }}
-          onClick={() => {router.push('/')}}
+          sx={{ flexGrow: 1, display: "flex", fontWeight: 'bold' }}
         >
-          Teerapat Satitporn
+          <Box sx={{':hover': { cursor: "pointer" }}} onClick={() => {router.push('/')}}>
+            Teerapat Satitporn
+          </Box>
+          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            &nbsp;{ getPageTitle() }
+          </Box>
         </Typography>
 
         {/* Menu */}

@@ -19,7 +19,7 @@
       { "name": "Vue.js", "icon": "vuejs/vuejs-original.svg" },
       { "name": "Nuxt.js", "icon": "nuxtjs/nuxtjs-original.svg" },
       { "name": "React", "icon": "react/react-original.svg" },
-      { "name": "React Native", "icon": "react/react-original.svg" }, 
+      { "name": "React Native", "icon": "reactnative/reactnative-original.svg" }, 
       { "name": "Next.js", "icon": "nextjs/nextjs-original.svg" },
       { "name": "ASP.Net Core", "icon": "dotnetcore/dotnetcore-original.svg" },
       { "name": "Cypress", "icon": "cypressio/cypressio-original.svg" }
@@ -28,8 +28,8 @@
   {
     "title": "Other Tools",
     "items": [
-      { "name": "Github", "icon": "github/github-original.svg" },
-      { "name": "Gitlab", "icon": "gitlab/gitlab-original.svg" },
+      { "name": "GitHub", "icon": "github/github-original.svg" },
+      { "name": "GitLab", "icon": "gitlab/gitlab-original.svg" },
       { "name": "Maya", "icon": "maya/maya-original.svg" },
       { "name": "Unity", "icon": "unity/unity-original.svg" }
     ]
