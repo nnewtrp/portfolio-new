@@ -34,7 +34,12 @@ export default function NavBar() {
     <AppBar sx={{ backgroundColor: 'black' }}>
       <Toolbar>
         {/* Title */}
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ flexGrow: 1, fontWeight: 'bold', ':hover': { cursor: "pointer" } }}
+          onClick={() => {router.push('/')}}
+        >
           Teerapat Satitporn
         </Typography>
 

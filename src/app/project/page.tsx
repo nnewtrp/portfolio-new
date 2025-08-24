@@ -1,5 +1,5 @@
 'use client'
-import { Divider } from "@mui/material"
+import { Divider, Grid } from "@mui/material"
 import CustomIcon from "@/components/CustomIcon"
 import styles from "./page.module.css"
 import projectList from "./projects.json"
@@ -14,9 +14,9 @@ export default function ProjectPage() {
           <Divider />
 
           {/* Items */}
-          <div className={styles.itemContainer}>
+          <Grid container sx={{ marginTop: "10px" }} spacing={2}>
             {header.items.map((item) => (
-              <div key={item.name} className={styles.item}>
+              <Grid key={item.name} size={{ xs: 12, sm: 12, md: 6, lg: 4, xl: 3 }} className={styles.item}>
                 {/* Project Name */}
                 <h1 className={styles.itemTitle}>{item.name}</h1>
 
@@ -38,9 +38,9 @@ export default function ProjectPage() {
                     />
                   ) : null}
                 </div>
-              </div>
+              </Grid>
             ))}
-          </div>
+          </Grid>
         </div>
       ))}
     </>
