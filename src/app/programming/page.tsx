@@ -1,5 +1,5 @@
 'use client'
-import { Divider } from "@mui/material"
+import { Divider, Grid } from "@mui/material"
 import styles from "./page.module.css"
 import skillList from "./skills.json"
 
@@ -13,12 +13,12 @@ export default function ProgrammingPage() {
           <Divider />
 
           {/* Items */}
-          <div className={styles.itemContainer}>
+          <Grid container sx={{ marginTop: "10px" }} spacing={2}>
             {header.items.map((item) => (
-              <div key={item.name} className={styles.item}>
+              <Grid key={item.name} size={{ xs: 6, sm: 4, md: 3, lg: 2, xl: 1.5 }} className={styles.item}>
                 {/* Image */}
                 <div className={styles.imageContainer}>
-                  {/* <img src={item.icon} alt={item.name} className={styles.image} /> */}
+                  {/* <img src={item.icon} alt={item.name} className={styles.icon} /> */}
                 </div>
                 
                 <Divider orientation="vertical" flexItem />
@@ -27,9 +27,9 @@ export default function ProgrammingPage() {
                 <div className={styles.textContainer}>
                   {item.name}
                 </div>
-              </div>
+              </Grid>
             ))}
-          </div>
+          </Grid>
         </div>
       ))}
     </>
