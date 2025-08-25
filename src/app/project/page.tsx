@@ -31,6 +31,7 @@ export default function ProjectPage() {
 
                 {/* Icons */}
                 <div className={styles.itemIconContainer}>
+                  {item.web_url ? <CustomIcon icon="Website" /> : null}
                   {item.github_path ? (
                     <CustomIcon
                       icon="GitHub"

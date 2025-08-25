@@ -42,7 +42,7 @@ const iconDetails: any = {
     color: "#FF4500", // Reddit orange
     link: () => { window.open(process.env.NEXT_PUBLIC_REDDIT_URL) }
   },
-  "Internet": {
+  "Website": {
     color: "#4285F4", // Google blue as default Internet color
     link: () => {}
   }
