@@ -18,18 +18,44 @@
     "items": [
       { "name": "Vue.js", "icon": "vuejs/vuejs-original.svg" },
       { "name": "Nuxt.js", "icon": "nuxtjs/nuxtjs-original.svg" },
+      { "name": "Vuetify", "icon": "vuetify/vuetify-original.svg" },
       { "name": "React", "icon": "react/react-original.svg" },
-      { "name": "React Native", "icon": "reactnative/reactnative-original.svg" }, 
+      { "name": "React Native", "icon": "reactnative/reactnative-original.svg" },
       { "name": "Next.js", "icon": "nextjs/nextjs-original.svg" },
+      { "name": "Material UI", "icon": "materialui/materialui-original.svg" },
+      { "name": "Tailwind CSS", "icon": "tailwindcss/tailwindcss-original.svg" },
+      { "name": "Bootstrap", "icon": "bootstrap/bootstrap-original.svg" },
       { "name": "ASP.Net Core", "icon": "dotnetcore/dotnetcore-original.svg" },
-      { "name": "Cypress", "icon": "cypressio/cypressio-original.svg" }
+      { "name": "Cypress", "icon": "cypressio/cypressio-original.svg" },
+      { "name": "Node.js", "icon": "nodejs/nodejs-original.svg" },
+      { "name": "Express", "icon": "express/express-original.svg" },
+      { "name": "Jupyter", "icon": "jupyter/jupyter-original.svg" },
+      { "name": "Spring Boot", "icon": "spring/spring-original.svg" }
+    ]
+  },
+  {
+    "title": "Database Management",
+    "items": [
+      { "name": "MySQL", "icon": "mysql/mysql-original.svg" },
+      { "name": "Firebase", "icon": "firebase/firebase-original.svg" },
+      { "name": "PostGreSQL", "icon": "postgresql/postgresql-original.svg" },
+      { "name": "DBeaver", "icon": "dbeaver/dbeaver-original.svg" }
+    ]
+  },
+  {
+    "title": "Git Version Control",
+    "items": [
+      { "name": "Git", "icon": "git/git-original.svg" },
+      { "name": "GitHub", "icon": "github/github-original.svg" },
+      { "name": "GitLab", "icon": "gitlab/gitlab-original.svg" }
     ]
   },
   {
     "title": "Other Tools",
     "items": [
-      { "name": "GitHub", "icon": "github/github-original.svg" },
-      { "name": "GitLab", "icon": "gitlab/gitlab-original.svg" },
+      { "name": "Figma", "icon": "figma/figma-original.svg" },
+      { "name": "Canva", "icon": "canva/canva-original.svg" },
+      { "name": "Trello", "icon": "trello/trello-original.svg" },
       { "name": "Maya", "icon": "maya/maya-original.svg" },
       { "name": "Unity", "icon": "unity/unity-original.svg" }
     ]
