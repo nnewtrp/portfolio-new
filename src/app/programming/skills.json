@@ -47,15 +47,18 @@
     "items": [
       { "name": "Git", "icon": "git/git-original.svg" },
       { "name": "GitHub", "icon": "github/github-original.svg" },
-      { "name": "GitLab", "icon": "gitlab/gitlab-original.svg" }
+      { "name": "GitLab", "icon": "gitlab/gitlab-original.svg" },
+      { "name": "SourceTree", "icon": "sourcetree/sourcetree-original.svg" }
     ]
   },
   {
     "title": "Other Tools",
     "items": [
+      { "name": "Postman", "icon": "postman/postman-original.svg" },
       { "name": "Figma", "icon": "figma/figma-original.svg" },
       { "name": "Canva", "icon": "canva/canva-original.svg" },
       { "name": "Trello", "icon": "trello/trello-original.svg" },
+      { "name": "Expo", "icon": "expo/expo-original.svg" },
       { "name": "Maya", "icon": "maya/maya-original.svg" },
       { "name": "Unity", "icon": "unity/unity-original.svg" }
     ]
