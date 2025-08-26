@@ -60,7 +60,8 @@
       { "name": "Trello", "icon": "trello/trello-original.svg" },
       { "name": "Expo", "icon": "expo/expo-original.svg" },
       { "name": "Maya", "icon": "maya/maya-original.svg" },
-      { "name": "Unity", "icon": "unity/unity-original.svg" }
+      { "name": "Unity", "icon": "unity/unity-original.svg" },
+      { "name": "Linux", "icon": "linux/linux-original.svg" }
     ]
   }
 ]
