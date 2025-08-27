@@ -44,7 +44,8 @@
   color: gray;
 }
 
-.username:hover {
+.item:hover .username {
   color: black;
   text-decoration: underline;
+  transition: color 0.5s ease;
 }
