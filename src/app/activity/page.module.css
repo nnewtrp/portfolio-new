@@ -1,5 +1,50 @@
+.mainContainer {
+  padding: 25px 40px;
+}
+
 .title {
-  font-size: 48px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 120px;
+  font-weight: bold;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.itemTitle {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 100%;
+}
+
+.icon {
+  width: 100%;
+}
+
+.textContainer {
+  padding: 20px;
+}
+
+.text {
+  color: gray;
+}
+
+.username:hover {
+  color: black;
   text-decoration: underline;
-  margin-bottom: 20px;
 }

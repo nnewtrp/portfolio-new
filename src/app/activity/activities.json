@@ -1,0 +1,23 @@
+[
+  {
+    "title": "LeetCode",
+    "iconPath": "leetcode/leetcode-original.svg",
+    "isDevicon": true,
+    "username": "nnewtrp",
+    "link": "https://leetcode.com/u/nnewtrp"
+  },
+  {
+    "title": "Kaggle",
+    "iconPath": "kaggle/kaggle-original.svg",
+    "isDevicon": true,
+    "username": "teerapatsatitporn",
+    "link": "https://www.kaggle.com/teerapatsatitporn"
+  },
+  {
+    "title": "CSS Battle",
+    "iconPath": "./activity/cssbattle.png",
+    "isDevicon": false,
+    "username": "nnewtrp",
+    "link": "https://cssbattle.dev/player/GO3KYjqXSHfzOSU4OFJdiHIBmlx2"
+  }
+]
