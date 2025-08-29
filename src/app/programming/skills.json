@@ -52,6 +52,13 @@
     ]
   },
   {
+    "title": "Web Deployment",
+    "items": [
+      { "name": "Vercel", "icon": "vercel/vercel-original.svg" },
+      { "name": "Heroku", "icon": "heroku/heroku-original.svg" }
+    ]
+  },
+  {
     "title": "Other Tools",
     "items": [
       { "name": "Postman", "icon": "postman/postman-original.svg" },
