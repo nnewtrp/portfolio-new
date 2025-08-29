@@ -22,7 +22,7 @@ const buttonWhiteStyle = {
 }
 
 // Condition
-const isOddIndex = (i: number) => i%2==1;
+const isOddIndex = (i: number) => i%2==1
 
 export default function EducationPage() {
   return (

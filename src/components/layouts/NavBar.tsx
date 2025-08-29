@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AppBar, Toolbar, Typography, Menu, MenuItem, Button, Divider, Box } from "@mui/material"
 import MenuDropdownIcon from "./MenuDropDownIcon";
 import { useRouter } from 'next/navigation'
@@ -19,6 +19,12 @@ export default function NavBar() {
   const pathName = usePathname()
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
+  useEffect(() => {
+    const title = getTitle()
+    if (title) document.title = title + ' | Teerapat Satitporn'
+    else document.title = 'Teerapat Satitporn - Welcome to my portfolio website'
+  }, [pathName])
+
   const isHomePath = pathName == '/'
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -34,8 +40,10 @@ export default function NavBar() {
     handleClose()
   }
 
+  const getTitle = () => !isHomePath ? menuList.filter((menu) => menu.path == pathName)[0]?.title : null
+
   const getPageTitle = () => {
-    const title = !isHomePath ? menuList.filter((menu) => menu.path == pathName)[0]?.title : null
+    const title = getTitle()
     return title ? '— ' + title : ''
   }
 

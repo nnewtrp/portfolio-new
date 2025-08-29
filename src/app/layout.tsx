@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s | Teerapat Satitporn',
-    default: "Teerapat Satitporn - Welcome to my portfolio website"
-  },
+  // title: {
+  //   template: '%s | Teerapat Satitporn',
+  //   default: "Teerapat Satitporn - Welcome to my portfolio website"
+  // },
   description: "Teerapat Satitporn Portfolio Website",
 }
 
