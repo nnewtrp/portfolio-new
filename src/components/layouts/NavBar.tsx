@@ -19,7 +19,7 @@ export default function NavBar() {
   const pathName = usePathname()
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
-  const isHomePath = pathName != '/'
+  const isHomePath = pathName == '/'
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)
@@ -35,10 +35,8 @@ export default function NavBar() {
   }
 
   const getPageTitle = () => {
-    if (isHomePath) {
-      return '— ' + menuList.filter((menu) => menu.path == pathName)[0]?.title
-    }
-    return
+    const title = !isHomePath ? menuList.filter((menu) => menu.path == pathName)[0]?.title : null
+    return title ? '— ' + title : ''
   }
 
   return (
