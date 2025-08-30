@@ -12,6 +12,11 @@
         "name": "🚀 Cypress Automation",
         "description": "Uses Cypress.js to automate browser interactions and solve the Browser Automation Challenge",
         "github_path": "cypress_showdown_space_automation"
+      },
+      {
+        "name": "📱 Check In App",
+        "description": "An online work timekeeping mobile application built with React Native, Expo, and Firebase.",
+        "github_path": "rn-checkin-app"
       }
     ]
   },
@@ -37,6 +42,12 @@
         "name": "🔐 File Encryption",
         "description": "Encrypt and decrypt files with RSA and custom-built ciphers using Python",
         "github_path": "python-file-encryption"
+      },
+      {
+        "name": "💬 Webchat",
+        "description": "A simple real-time chat web application built with React and Firebase",
+        "web_url": "https://webchat-siit.web.app/",
+        "github_path": "react-webchat"
       }
     ]
   }

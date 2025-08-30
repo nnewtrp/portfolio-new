@@ -31,13 +31,15 @@ export default function ProjectPage() {
 
                 {/* Icons */}
                 <div className={styles.itemIconContainer}>
-                  {item.web_url ? <CustomIcon icon="Website" /> : null}
-                  {item.github_path ? (
+                  {item.web_url ?
+                    <CustomIcon icon="Website" onClick={() => {window.open(item.web_url)}} />
+                  : null}
+                  {item.github_path ?
                     <CustomIcon
                       icon="GitHub"
                       onClick={() => {window.open(process.env.NEXT_PUBLIC_GITHUB_URL + item.github_path)}}
                     />
-                  ) : null}
+                  : null}
                 </div>
               </Grid>
             ))}
