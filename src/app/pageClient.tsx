@@ -69,12 +69,12 @@ export default function HomePageClient() {
     <>
       {/* Main */}
       <Box sx={[containerStyle, { justifyContent: "center", alignItems: "center", height: 600 }]}>
-        <Box sx={[imageContainerStyle, { height: "auto" }]}>
+        <Box sx={[imageContainerStyle, { height: 720 }]}>
           <Image
             src="/home/me1.jpg"
             alt="Picture of the author"
-            height={4000} // fixed height
-            width={4000}    // dummy value
+            height={imgSize}
+            width={imgSize}
             className={styles.mainImage}
           />
         </Box>
