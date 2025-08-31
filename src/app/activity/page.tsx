@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image"
 import { Divider, Grid } from "@mui/material"
 import styles from "./page.module.css"
 import activityList from "./activities.json"
@@ -33,7 +34,13 @@ export default function ActivityPage() {
           >
             {/* Image */}
             <div className={styles.iconContainer}>
-              <img src={getImageIconPath(item)} alt={item.title} width={iconSize} />
+              <Image
+                src={getImageIconPath(item)}
+                alt={item.title}
+                width={iconSize}
+                height={iconSize}
+                style={{ height: "auto" }}
+              />
             </div>
             
             <Divider orientation="vertical" flexItem />

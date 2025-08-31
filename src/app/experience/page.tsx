@@ -1,8 +1,12 @@
 'use client'
+import Image from "next/image"
 import { Divider } from "@mui/material"
 import styles from "./page.module.css"
 import jobList from "./jobs.json"
 import moment from "moment"
+
+// Logo Size
+const logoSize = 100
 
 export default function ExperiencePage() {
   return (
@@ -15,7 +19,13 @@ export default function ExperiencePage() {
         <div key={item.short_name} className={styles.itemContainer}>
           {/* Image */}
           <div className={styles.imageContainer}>
-            <img src={item.logo} alt={item.company} className={styles.logo} />
+            <Image
+              src={item.logo}
+              alt={item.company}
+              width={logoSize}
+              height={logoSize}
+              className={styles.logo}
+            />
           </div>
 
           {/* Divider */}

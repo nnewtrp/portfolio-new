@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image"
 import { Divider, Grid } from "@mui/material"
 import styles from "./page.module.css"
 import skillList from "./skills.json"
@@ -21,7 +22,12 @@ export default function ProgrammingPage() {
               <Grid key={item.name} size={{ xs: 6, sm: 4, md: 3, lg: 2, xl: 1.5 }} className={styles.item}>
                 {/* Image */}
                 <div className={styles.iconContainer}>
-                  <img src={getImageIconPath(item.icon)} alt={item.name} height={iconSize} width={iconSize} />
+                  <Image
+                    src={getImageIconPath(item.icon)}
+                    alt={item.name}
+                    height={iconSize}
+                    width={iconSize}
+                  />
                 </div>
                 
                 <Divider orientation="vertical" flexItem />
