@@ -11,9 +11,9 @@ import jobList from "./experience/jobs.json"
 import moment from "moment"
 
 // Styles
-const containerStyle = { flexGrow: 1, height: 600, overflow: 'hidden', display: 'flex' }
+const containerStyle = { flexGrow: 1, overflow: 'hidden', display: 'flex', minHeight: 600 }
 const reverseStyle = { flexDirection: 'row-reverse', backgroundColor: 'black' }
-const imageContainerStyle = { display: { xs: 'none', md: 'block' }, overflow: 'hidden' }
+const imageContainerStyle = { display: { xs: 'none', md: 'block' }, overflow: 'hidden', height: 600 }
 
 const buttonStyle = { fontWeight: 'bold', marginTop: 5 }
 const buttonBlackStyle = {
@@ -68,8 +68,8 @@ export default function HomePage() {
   return (
     <>
       {/* Main */}
-      <Box sx={[containerStyle, { justifyContent: "center", alignItems: "center" }]}>
-        <Box sx={imageContainerStyle}>
+      <Box sx={[containerStyle, { justifyContent: "center", alignItems: "center", height: 600 }]}>
+        <Box sx={[imageContainerStyle, { height: "auto" }]}>
           <Image
             src="/home/me1.jpg"
             alt="Picture of the author"
