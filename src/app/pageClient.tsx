@@ -60,7 +60,7 @@ const getWorkYear = () => {
 }
 
 // Default Image Size
-const imgSize = 2000
+const imgSize = 1000
 
 export default function HomePageClient() {
   const router = useRouter()
@@ -73,8 +73,8 @@ export default function HomePageClient() {
           <Image
             src="/home/me1.jpg"
             alt="Picture of the author"
-            height={imgSize} // fixed height
-            width={imgSize}    // dummy value
+            height={4000} // fixed height
+            width={4000}    // dummy value
             className={styles.mainImage}
           />
         </Box>
