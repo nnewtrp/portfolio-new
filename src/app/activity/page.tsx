@@ -7,7 +7,7 @@ const iconSize = 80
 
 interface IconItemProps {
   iconPath: string,
-  isDevicon: Boolean
+  isDevicon: boolean
 }
 
 const getImageIconPath = (item: IconItemProps) => {

@@ -81,7 +81,7 @@ export default function NavBar() {
             horizontal: 'right',
           }}
           sx={{ mt: "35px" }}
-          open={Boolean(anchorEl)}
+          open={!!anchorEl}
           onClose={handleClose}
         >
           {menuList.map((menu) => (

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 
 interface Props {
-  isRotate: Boolean
+  isRotate: boolean
 }
 
 export default function MenuDropdownIcon(props: Props) {

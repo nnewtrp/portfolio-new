@@ -10,10 +10,17 @@ import LanguageIcon from '@mui/icons-material/Language';
 interface props {
   icon: string,
   color?: string,
-  onClick?: Function
+  onClick?: () => void
 }
 
-const iconDetails: any = {
+interface iconDetailProps {
+  [key: string]: {
+    color: string,
+    link: () => void
+  }
+}
+
+const iconDetails: iconDetailProps = {
   "Email": {
     color: "#D93025", // Gmail red
     link: () => { window.location.href = "mailto:" + process.env.NEXT_PUBLIC_EMAIL }
