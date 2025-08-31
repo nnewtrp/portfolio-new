@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👨🏻‍💼 Personal Portfolio Website  
 
-## Getting Started
+This is my personal portfolio website built with **Next.js** and **Material UI (MUI)**.  
+The website highlights my background, education, work experience, programming skills, projects, and activities in a clean and modern design.  
 
-First, run the development server:
+---
 
+## 🚀 Features  
+
+- **Home Page** – Overview and introduction.  
+- **Education** – My academic background from school to university.  
+- **Work Experience** – Professional roles and companies I have worked in.  
+- **Programming Skills** – Technical skills and tools I specialize in.  
+- **Personal Projects** – Projects showcasing my development experience.  
+- **Other Activities** – Additional achievements and contributions.  
+
+---
+
+## 🛠 Tech Stack  
+
+- Next.js – React framework for building fast, modern web apps.  
+- Material UI – UI component library for a sleek and responsive design.  
+
+---
+
+## 📦 Installation & Setup  
+
+### 1. Clone the Repository  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/portfolio-website.git
+cd portfolio-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies  
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the Project Locally  
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Open in Browser  
+Go to:  
+👉 http://localhost:3000  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌍 Deployment  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is easily deployed on Vercel (recommended for Next.js).  
+Once deployed, your portfolio will be available at:  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+https://portfolio-new.vercel.app
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 Learn More  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js Docs → https://nextjs.org/docs  
+- Material UI Docs → https://mui.com/material-ui/getting-started/overview/  
+
+---
+
+✨ This portfolio is a reflection of my journey as a developer.  
