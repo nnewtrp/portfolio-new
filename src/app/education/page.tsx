@@ -5,7 +5,7 @@ import styles from "./page.module.css"
 import schoolList from "./schools.json"
 
 // Styles
-const containerStyle = { flexGrow: 1, height: 400, overflow: 'hidden', display: 'flex' }
+const containerStyle = { flexGrow: 1, minHeight: 400, overflow: 'hidden', display: 'flex' }
 const reverseStyle = { flexDirection: 'row-reverse', backgroundColor: 'black' }
 const imageContainerStyle = { display: { xs: 'none', md: 'none', lg: 'block' }, overflow: 'hidden' }
 

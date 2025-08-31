@@ -168,7 +168,7 @@ export default function HomePage() {
 
       {/* Skills */}
       <Box sx={[containerStyle, { height: 'auto' }]}>
-        <div className={styles.mainContainer} style={{ textAlign: 'center' }}>
+        <div className={styles.mainContainer} style={{ textAlign: 'center', margin: "30px 10px" }}>
           <h1 className={styles.title}>Skills & Abilities</h1>
 
           {/* Details */}
@@ -215,7 +215,7 @@ export default function HomePage() {
             {/* Email */}
             <div className={styles.contactItem}>
               <EmailIcon className={styles.contactItemIcon} />
-              <p className={styles.description}>
+              <p className={styles.description} style={{ wordBreak: "break-all" }}>
                 {process.env.NEXT_PUBLIC_EMAIL}
               </p>
             </div>
