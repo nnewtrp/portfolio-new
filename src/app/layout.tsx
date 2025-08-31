@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     default: "Teerapat Satitporn | Portfolio"
   },
   description: "Teerapat Satitporn Portfolio Website",
+  generator: "Next.js",
+  applicationName: "portfolio-new",
+  keywords: ["Teerapat", "Satitporn", "Portfolio"],
+  authors: [{ name: "Teerapat Satitporn" }],
+  creator: "Teerapat Satitporn"
 }
 
 export default function RootLayout({
