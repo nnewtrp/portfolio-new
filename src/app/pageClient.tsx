@@ -167,7 +167,7 @@ export default function HomePageClient() {
       </Box>
 
       {/* Skills */}
-      <Box sx={[containerStyle, { height: 'auto' }]}>
+      <Box sx={[containerStyle, { minHeight: 'auto' }]}>
         <div className={styles.mainContainer} style={{ textAlign: 'center', margin: "30px 10px" }}>
           <h1 className={styles.title}>Skills & Abilities</h1>
 
