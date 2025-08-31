@@ -1,0 +1,8 @@
+[
+  { "title": "Home", "path": "/" },
+  { "title": "Education", "path": "/education" },
+  { "title": "Work Experience", "path": "/experience" },
+  { "title": "Programming Skills", "path": "/programming" },
+  { "title": "Personal Projects", "path": "/project" },
+  { "title": "Other Activities", "path": "/activity" }
+]

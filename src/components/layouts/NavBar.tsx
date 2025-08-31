@@ -1,29 +1,15 @@
 'use client'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AppBar, Toolbar, Typography, Menu, MenuItem, Button, Divider, Box } from "@mui/material"
 import MenuDropdownIcon from "./MenuDropDownIcon";
 import { useRouter } from 'next/navigation'
 import { usePathname } from 'next/navigation'
-
-const menuList = [
-  { title: "Home", path: "/" },
-  { title: "Education", path: "/education" },
-  { title: "Work Experience", path: "/experience" },
-  { title: "Programming Skills", path: "/programming" },
-  { title: "Personal Projects", path: "/project" },
-  { title: "Other Activities", path: "/activity" }
-]
+import menuList from './menu.json'
 
 export default function NavBar() {
   const router = useRouter()
   const pathName = usePathname()
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
-
-  useEffect(() => {
-    const title = getTitle()
-    if (title) document.title = title + ' | Teerapat Satitporn'
-    else document.title = 'Teerapat Satitporn - Welcome to my portfolio website'
-  }, [pathName])
 
   const isHomePath = pathName == '/'
 
