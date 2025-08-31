@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image"
 import { Box, Button } from "@mui/material"
 import styles from "./page.module.css"
 import schoolList from "./schools.json"
@@ -24,6 +25,9 @@ const buttonWhiteStyle = {
 // Condition
 const isOddIndex = (i: number) => i%2==1
 
+// Default Image Size
+const imgSize = 2000
+
 export default function EducationPage() {
   return (
     <>
@@ -31,10 +35,12 @@ export default function EducationPage() {
         <Box key={item.name} sx={[containerStyle, isOddIndex(i) ? reverseStyle : {}]}>
           {/* Image */}
           <Box sx={imageContainerStyle}>
-            <img
+            <Image
               src={item.image}
               alt={item.name}
               className={styles.mainImage}
+              width={imgSize}
+              height={imgSize}
             />
           </Box>
 

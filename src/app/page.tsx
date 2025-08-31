@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image"
 import { Box, Button, Divider } from "@mui/material"
 import { useRouter } from 'next/navigation'
 import CustomIcon from "@/components/CustomIcon"
@@ -58,6 +59,9 @@ const getWorkYear = () => {
   return workYear
 }
 
+// Default Image Size
+const imgSize = 2000
+
 export default function HomePage() {
   const router = useRouter()
 
@@ -66,9 +70,11 @@ export default function HomePage() {
       {/* Main */}
       <Box sx={[containerStyle, { justifyContent: "center", alignItems: "center" }]}>
         <Box sx={imageContainerStyle}>
-          <img
+          <Image
             src="/home/me1.jpg"
             alt="Picture of the author"
+            height={imgSize} // fixed height
+            width={imgSize}    // dummy value
             className={styles.mainImage}
           />
         </Box>
@@ -88,10 +94,12 @@ export default function HomePage() {
       {/* About Me */}
       <Box sx={[containerStyle, reverseStyle]}>
         <Box sx={imageContainerStyle}>
-          <img
+          <Image
             src="/home/me2.jpg"
             alt="Picture of the author"
             className={styles.mainImage}
+            height={imgSize}
+            width={imgSize}
           />
         </Box>
         <div className={styles.mainContainer} style={{ color: 'white' }}>
@@ -107,10 +115,12 @@ export default function HomePage() {
       {/* Education */}
       <Box sx={containerStyle}>
         <Box sx={imageContainerStyle}>
-          <img
+          <Image
             src="/home/study.jpg"
             alt="Picture of the lecture room"
             className={styles.mainImage}
+            height={imgSize}
+            width={imgSize}
           />
         </Box>
         <div className={styles.mainContainer}>
@@ -132,10 +142,12 @@ export default function HomePage() {
       {/* Work Experience */}
       <Box sx={[containerStyle, reverseStyle]}>
         <Box sx={imageContainerStyle}>
-          <img
+          <Image
             src="/home/work.jpg"
             alt="Picture of the employees working"
             className={styles.mainImage}
+            height={imgSize}
+            width={imgSize}
           />
         </Box>
         <div className={styles.mainContainer} style={{ color: 'white' }}>
@@ -188,10 +200,12 @@ export default function HomePage() {
       {/* Contact */}
       <Box sx={[containerStyle, reverseStyle]}>
         <Box sx={imageContainerStyle}>
-          <img
+          <Image
             src="/home/me3.jpg"
             alt="Picture of the author"
             className={styles.mainImage}
+            height={imgSize}
+            width={imgSize}
           />
         </Box>
         <div className={[styles.mainContainer, styles.contactContainer].join(' ')} style={{ color: 'white' }}>
