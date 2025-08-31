@@ -53,7 +53,7 @@ This project is easily deployed on Vercel (recommended for Next.js).
 Once deployed, your portfolio will be available at:  
 
 ```
-https://portfolio-new.vercel.app
+https://portfolio-teerapat.vercel.app
 ```
 
 ---
