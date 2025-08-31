@@ -12,7 +12,10 @@ export default function ExperiencePage() {
   return (
     <div className={styles.mainContainer}>
       {/* Title */}
-      <h1 className={styles.title}>Work Experience</h1>
+      <div className={styles.titleContainer}>
+        <h1 className={styles.title}>💼 Experience</h1>
+        <Divider />
+      </div>
 
       {/* Work Experience Timeline */}
       {jobList.map((item) => (
