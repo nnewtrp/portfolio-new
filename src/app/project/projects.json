@@ -29,12 +29,12 @@
         "github_path": "CropInsurance_2"
       },
       {
-        "name": "✈️ Flight Reservation",
+        "name": "✈️ TICKETA",
         "description": "A mobile application for flight reservations built with React Native, Expo, and Firebase",
         "github_path": "FlightReservation"
       },
       {
-        "name": "🚌 Shuttle Bus Management",
+        "name": "🚌 Engy",
         "description": "A system designed to manage student transportation shuttle buses within Thammasat University",
         "github_path": "Engy2"
       },

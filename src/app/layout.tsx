@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: "Teerapat Satitporn Portfolio Website",
   generator: "Next.js",
   applicationName: "portfolio-new",
-  keywords: ["Teerapat", "Satitporn", "Portfolio"],
+  keywords: ["Teerapat Satitporn", "nnewtrp", "Teerapat", "Satitporn", "Portfolio"],
   authors: [{ name: "Teerapat Satitporn" }],
   creator: "Teerapat Satitporn"
 }
