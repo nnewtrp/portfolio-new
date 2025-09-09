@@ -38,6 +38,7 @@
     "items": [
       { "name": "MySQL", "icon": "mysql/mysql-original.svg" },
       { "name": "Firebase", "icon": "firebase/firebase-original.svg" },
+      { "name": "MongoDB", "icon": "mongodb/mongodb-original.svg" },
       { "name": "PostGreSQL", "icon": "postgresql/postgresql-original.svg" },
       { "name": "DBeaver", "icon": "dbeaver/dbeaver-original.svg" }
     ]
