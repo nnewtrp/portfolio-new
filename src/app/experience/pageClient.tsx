@@ -8,6 +8,21 @@ import moment from "moment"
 // Logo Size
 const logoSize = 100
 
+// Function to calculate duration between two dates
+function getDuration(startDate: string, endDate?: string) {
+  const start = moment(startDate)
+  const end = endDate ? moment(endDate) : moment()
+  end.add(1, "months")
+  const years = end.diff(start, "years")
+  start.add(years, "years")
+  const months = end.diff(start, "months")
+  
+  let sentence = ""
+  if (years > 0) sentence += years + (years === 1 ? " year " : " years ")
+  if (months > 0) sentence += months + (months === 1 ? " month" : " months")
+  return sentence.trim()
+}
+
 export default function ExperiencePageClient() {
   return (
     <div className={styles.mainContainer}>
@@ -40,7 +55,8 @@ export default function ExperiencePageClient() {
             <p className={styles.position}>{item.position}</p>
             <p className={styles.period}>
               {moment(item.startDate).format("MMM YYYY")} -&nbsp;
-              {item.endDate ? moment(item.endDate).format("MMM YYYY") : "Present"}
+              {item.endDate ? moment(item.endDate).format("MMM YYYY") : "Present"}&nbsp;
+              ({getDuration(item.startDate, item.endDate || undefined)})
             </p>
           </div>
         </div>

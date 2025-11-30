@@ -14,7 +14,7 @@
     ]
   },
   {
-    "title": "Frameworks",
+    "title": "Frameworks and Libraries",
     "items": [
       { "name": "Vue.js", "icon": "vuejs/vuejs-original.svg" },
       { "name": "Nuxt.js", "icon": "nuxtjs/nuxtjs-original.svg" },
@@ -30,6 +30,7 @@
       { "name": "Node.js", "icon": "nodejs/nodejs-original.svg" },
       { "name": "Express", "icon": "express/express-original.svg" },
       { "name": "Jupyter", "icon": "jupyter/jupyter-original.svg" },
+      { "name": "Pandas", "icon": "pandas/pandas-original.svg" },
       { "name": "Spring Boot", "icon": "spring/spring-original.svg" }
     ]
   },
