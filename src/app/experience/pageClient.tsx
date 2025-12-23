@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image"
-import { Divider } from "@mui/material"
+import { Divider, Grid } from "@mui/material"
 import styles from "./page.module.css"
 import jobList from "./jobs.json"
 import moment from "moment"
@@ -34,7 +34,18 @@ export default function ExperiencePageClient() {
 
       {/* Work Experience Timeline */}
       {jobList.map((item) => (
-        <div key={item.short_name} className={styles.itemContainer}>
+        <Grid
+          key={item.short_name}
+          className={styles.itemContainer}
+          sx={{
+            ':hover': {
+              borderColor: item.color,
+              transition: "color 0.5s ease",
+              [`& .${styles.companyName}`]: { textDecoration: "underline", color: item.color, transition: "color 0.5s ease" }
+            }
+          }}
+          onClick={() => {window.open(item.website)}}
+        >
           {/* Image */}
           <div className={styles.imageContainer}>
             <Image
@@ -59,7 +70,7 @@ export default function ExperiencePageClient() {
               ({getDuration(item.startDate, item.endDate || undefined)})
             </p>
           </div>
-        </div>
+        </Grid>
       ))}
     </div>
   )

@@ -3,7 +3,8 @@
     "company": "Accenture",
     "short_name": "acn",
     "logo": "/experience/company_logo/acn.png",
-    "color": "#19335A",
+    "website": "https://www.accenture.com/th-en",
+    "color": "#A100FF",
     "position": "Front-End Developer",
     "startDate": "2026-01-05"
   },
@@ -11,6 +12,7 @@
     "company": "Perfect Companion Group",
     "short_name": "pcg",
     "logo": "/experience/company_logo/pcg.png",
+    "website": "https://www.perfectcompanion.com/th",
     "color": "#19335A",
     "position": "Web Developer",
     "startDate": "2022-06-01",
