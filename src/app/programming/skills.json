@@ -10,7 +10,8 @@
       { "name": "PHP", "icon": "php/php-original.svg" },
       { "name": "Java", "icon": "java/java-original.svg" },
       { "name": "C#", "icon": "csharp/csharp-original.svg" },
-      { "name": "C++", "icon": "cplusplus/cplusplus-original.svg" }
+      { "name": "C++", "icon": "cplusplus/cplusplus-original.svg" },
+      { "name": "Go", "icon": "go/go-original.svg" }
     ]
   },
   {
