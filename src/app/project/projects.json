@@ -3,6 +3,12 @@
     "title": "Personal Projects",
     "items": [
       {
+        "name": "🍔 CodeBurger API",
+        "description": "A simple Fast-Food Restaurant Backend API built with Java Spring Boot and MongoDB.",
+        "web_url": "https://codeburgerapi-production-0d53.up.railway.app/api/swagger-ui/index.html",
+        "github_path": "CodeBurgerApi"
+      },
+      {
         "name": "🗺️ Travelog",
         "description": "A web application built with the MERN stack for tracking users’ travel history and visited cities.",
         "github_path": "mern-travel-history"
