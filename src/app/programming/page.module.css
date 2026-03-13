@@ -15,6 +15,7 @@
   border-radius: 15px;
   height: 60px;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .iconContainer {

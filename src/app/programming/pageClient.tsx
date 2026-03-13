@@ -21,7 +21,7 @@ export default function ProgrammingPageClient() {
             {header.items.map((item) => (
               <Grid key={item.name} size={{ xs: 6, sm: 4, md: 3, lg: 2, xl: 1.5 }} className={styles.item}>
                 {/* Image */}
-                <div className={styles.iconContainer}>
+                <div className={styles.iconContainer} style={{ background: item.dark ? "black" : "white" }}>
                   <Image
                     src={getImageIconPath(item.icon)}
                     alt={item.name}

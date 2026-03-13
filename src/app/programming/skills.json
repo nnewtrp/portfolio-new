@@ -58,6 +58,7 @@
     "title": "Web Deployment",
     "items": [
       { "name": "Vercel", "icon": "vercel/vercel-original.svg" },
+      { "name": "Railway", "icon": "railway/railway-original.svg", "dark": true },
       { "name": "Heroku", "icon": "heroku/heroku-original.svg" }
     ]
   },
