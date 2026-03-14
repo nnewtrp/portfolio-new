@@ -37,7 +37,12 @@ export default function ProjectPageClient() {
                   {item.github_path ?
                     <CustomIcon
                       icon="GitHub"
-                      onClick={() => {window.open(process.env.NEXT_PUBLIC_GITHUB_URL + item.github_path)}}
+                      onClick={() => {
+                        window.open(
+                          (item.github_owner ? `https://github.com/${item.github_owner}/` : process.env.NEXT_PUBLIC_GITHUB_URL) +
+                          item.github_path
+                        )
+                      }}
                     />
                   : null}
                 </div>

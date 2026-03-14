@@ -37,6 +37,7 @@
       {
         "name": "🌾 Crop Insurance",
         "description": "A web application designed to help farmers affected by natural disasters report their issues to government officials",
+        "web_url": "https://quiet-anchorage-22133.herokuapp.com/",
         "github_path": "CropInsurance_2"
       },
       {
@@ -59,6 +60,13 @@
         "description": "A simple real-time chat web application built with React and Firebase",
         "web_url": "https://webchat-siit.web.app/",
         "github_path": "react-webchat"
+      },
+      {
+        "name": "🎮 AMaze",
+        "description": "A maze-escape game built with Unity using C#",
+        "web_url": "https://drive.google.com/file/d/1ePCPv07JKWE0tnQuLscVgTCJ-9qKKnmt/view?usp=sharing",
+        "github_path": "AMaze",
+        "github_owner": "NanoCode012"
       }
     ]
   }
