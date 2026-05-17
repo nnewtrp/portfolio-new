@@ -25,6 +25,7 @@
       { "name": "Next.js", "icon": "nextjs/nextjs-original.svg" },
       { "name": "Material UI", "icon": "materialui/materialui-original.svg" },
       { "name": "Tailwind CSS", "icon": "tailwindcss/tailwindcss-original.svg" },
+      { "name": "Ant Design", "icon": "antdesign/antdesign-original.svg" },
       { "name": "Bootstrap", "icon": "bootstrap/bootstrap-original.svg" },
       { "name": "ASP.Net Core", "icon": "dotnetcore/dotnetcore-original.svg" },
       { "name": "Cypress", "icon": "cypressio/cypressio-original.svg" },
