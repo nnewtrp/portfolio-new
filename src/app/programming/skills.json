@@ -32,7 +32,9 @@
       { "name": "Express", "icon": "express/express-original.svg" },
       { "name": "Jupyter", "icon": "jupyter/jupyter-original.svg" },
       { "name": "Pandas", "icon": "pandas/pandas-original.svg" },
-      { "name": "Spring Boot", "icon": "spring/spring-original.svg" }
+      { "name": "Spring Boot", "icon": "spring/spring-original.svg" },
+      { "name": "FastAPI", "icon": "fastapi/fastapi-original.svg" },
+      { "name": "Angular.js", "icon": "angularjs/angularjs-original.svg" }
     ]
   },
   {
